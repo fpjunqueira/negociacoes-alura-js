@@ -19,12 +19,12 @@
 
         <div class="form-group">
             <label for="data">Data</label>
-            <input type="date" id="data" class="form-control" required autofocus/>
+            <input type="date" id="data" class="form-control" required autofocus />
         </div>
 
         <div class="form-group">
             <label for="quantidade">Quantidade</label>
-            <input type="number" min="1" step="1" id="quantidade" class="form-control" value="1" required/>
+            <input type="number" min="1" step="1" id="quantidade" class="form-control" value="1" required />
         </div>
 
         <div class="form-group">
@@ -59,6 +59,46 @@
 
     <script>
         let negociacaoController = new NegociacaoController();
+    </script>
+
+    <script>
+
+        
+         /*
+        
+        const negociacao = new Proxy(new Negociacao(new Date(), 1, 100), {
+
+
+            // target => objeto real
+            // prop => propriedade
+            // receiver => proxy
+
+            // trap for getter
+            get: function (target, prop, receiver) {
+
+                console.log(`The property "${prop}" was intecepted`);
+                return Reflect.get(target, prop, receiver);
+            },
+
+            // trap for setter
+            set: function (target, prop, value, receiver) {
+
+                console.log(`New value "${value}" for property "${prop}". (It old value is ${target[prop]})`);
+                return Reflect.set(target, prop, value, receiver);
+            }
+        });
+
+        // trap for getter
+        console.log(negociacao.quantidade);
+        console.log(negociacao.valor);
+
+        // trap for setter
+        negociacao.quantidade = 100;
+        negociacao.valor = 10;
+
+        */
+
+
     </script>
 
 </body>
