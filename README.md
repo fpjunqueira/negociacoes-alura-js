@@ -1,3 +1,3 @@
 # Negociacoes Alura JS
 
-Just see https://www.alura.com.br/carreira-engenheiro-javascript
+Curso de ES6 no alura.
